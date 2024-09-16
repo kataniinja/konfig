@@ -1,26 +1,26 @@
 # Практическое занятие №1. Введение, основы работы в командной строке
 
-Ерченков А. А. - ИКБО-62-23
+Катаниди Б. А. - ИКБО-62-23
 
 ## Задание 1
 
 ```
 grep '^[^:]*' /etc/passwd | cut -d: -f1 | sort
 ```
-![image](https://github.com/user-attachments/assets/42ab2124-e9b1-4faa-956b-b29e3559d06d)
+![1](https://github.com/user-attachments/assets/aa71f23d-b78d-4184-b757-0388607a0bb5)
 
 ## Задание 2
 
 ```
 cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -n 5
 ```
-![image](https://github.com/user-attachments/assets/61e1654c-345b-41c8-99a3-e393d30d913c)
+![2](https://github.com/user-attachments/assets/ac37b243-ab36-4d02-9a09-9571a06a99c6)
 
 ## Задание 3
 
 ```
 #!/bin/bash
-if [ "$#" -ne 1 ];  then
+if [ "$#" -ne 1 ];  thennano
         echo "Использование: $0 \"Ваш текст\""
         exit -1
 fi
@@ -34,7 +34,7 @@ printf '+%s+\n' "$(printf '%*s' "$frame_length" '' | tr ' ' '-')"
 printf '| %s |\n' "$text"
 printf '+%s+\n' "$(printf '%*s' "$frame_length" '' | tr ' ' '-')"
 ```
-![image](https://github.com/user-attachments/assets/ae857ba1-ea52-4f28-96bd-12418431e8f0)
+![3](https://github.com/user-attachments/assets/68158481-3e19-4561-979d-4a7fffdd5e62)
 
 ## Задание 4
 
@@ -50,7 +50,7 @@ file="$1"
 
 grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' "$file" | sort -u
 ```
-![image](https://github.com/user-attachments/assets/cd0f72ea-83cd-4c41-8ee5-ec8d3a8ecda9)
+![4](https://github.com/user-attachments/assets/ca547020-2830-4099-8e5f-edfd63f5e498)nano
 
 ## Задание 5
 
@@ -87,7 +87,7 @@ fi
 
 echo "Команда '$command_name' успешно зарегестрирована."
 ```
-![image](https://github.com/user-attachments/assets/5a08fa01-3a6b-4744-adac-38e407b88a04)
+![5](https://github.com/user-attachments/assets/cd8c4cef-4ab3-4384-a9f3-8116ce538d5c)
 
 ## Задание 6
 
@@ -141,8 +141,6 @@ else
 	exit 1
 fi
 ```
-![image](https://github.com/user-attachments/assets/2b9b0384-c7c8-41b1-91fa-c8fb359c0b3b)
-
 ## Задание 7
 
 ```
@@ -186,7 +184,6 @@ if ! $found_duplicates; then
 	exit 1
 fi
 ```
-![image](https://github.com/user-attachments/assets/b4fd6d45-67b8-472e-bf7a-9a6085f37b1d)
 
 ## Задание 8
 
@@ -220,7 +217,6 @@ tar -cvf "$archive_name" -C "$directory" ./*."$extension"
 
 echo "Архив '$archive_name' успешно создан."
 ```
-![image](https://github.com/user-attachments/assets/acbd3b98-e1c0-4035-beb0-341410c61723)
 
 ## Задание 9
 
@@ -244,7 +240,6 @@ sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Заменено в файле: '$output_file'"
 ```
-![image](https://github.com/user-attachments/assets/5e48972c-2154-4ba2-bfea-93aa40584567)
 
 ## Задание 10
 
@@ -265,4 +260,3 @@ fi
 
 find "$directory" -type f -name "*.txt" -empty -exec basename {} \;
 ```
-![image](https://github.com/user-attachments/assets/811f4ac9-c301-45c8-a43b-a96a2f8d9bfe)
