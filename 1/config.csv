@@ -1,0 +1,2 @@
+username,archive_path,startup_script
+user1,virtual_fs.tar,startup_script.txt

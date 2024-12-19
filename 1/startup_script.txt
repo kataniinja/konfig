@@ -1,0 +1,6 @@
+ls
+cd virtual_fs
+date
+whoami
+cd ..
+clear
